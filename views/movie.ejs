@@ -1,0 +1,26 @@
+<%include partials/header.ejs%>
+  <%include partials/nav.ejs%>
+
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 my-3 text-center">
+          <div class="card">
+            <div class="card-header">
+              <%=movie.name%>
+            </div>
+            <div class="card-body">
+              <img src="/public/images<%=movie.path%>" width="80%" height="300" />
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">View</button>
+              <button class="btn btn-success">Download</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </section>
+<%include partials/footer.ejs%>
